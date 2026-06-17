@@ -1,0 +1,47 @@
+*{
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app-container{
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.input-form{
+  margin: 20px 0;
+}
+.input-form form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#result-card{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e01717;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.result-bar{
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 10px;
+  border: 1px solid black;
+  width:40%;
+  margin: 20px auto;
+  
+}
