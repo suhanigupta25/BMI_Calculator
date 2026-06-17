@@ -13,31 +13,30 @@ function ResultCard(props){
     
 return (
     <div>
-        <div>
+        <div className="result-card">
             <h1>Result</h1>
             <h2>HI {props.name}!</h2>
 
-            <p>Your BMI is: {props.bmiResult}</p>
-            <p>You are in the category: {props.bmiCategory}</p>
+            <p className="bmi-value">Your BMI is: {props.bmiResult}</p>
+            <p className="bmi-category">You are in the category: {props.bmiCategory}</p>
         </div>
 
-        <div>
-            <div className="bar-container">
+        <div className="bar-container">
                 <div
                     className="result-bar"
                     style={{
                         backgroundColor: barStyle.color,
-                        width: barStyle.width
                     }}
                 ></div>
             </div>
 
-            <span>Underweight</span>
-            <span style={{ marginLeft: '20px' }}>Normal</span>
-            <span style={{ marginLeft: '20px' }}>Overweight</span>
-            <span style={{ marginLeft: '20px' }}>Obese</span>
+            <div className="bar-labels">
+                <span>Underweight</span>
+                <span>Normal</span>
+                <span style={{ marginLeft: '20px' }}>Overweight</span>
+                <span style={{ marginLeft: '20px' }}>Obese</span>
+            </div>
         </div>
-    </div>
 );
 }
 export default ResultCard;
