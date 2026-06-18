@@ -36,7 +36,7 @@ function App(){
 
   return (
     <div>
-      <h2>BMI CALCULATOR</h2>
+      <h1>BMI CALCULATOR</h1>
       <InputForm name={name} weight={weight} height={height} setName={setName} setWeight={setWeight} setHeight={setHeight}/>
       <button onClick={calculateBMI} >Calculate BMI</button>     
       <ResultCard name={name} bmiResult={bmiResult} bmiCategory={bmiCategory}/>

@@ -15,7 +15,7 @@ return (
     <div>
         <div className="result-card">
             <h1>Result</h1>
-            <h2>HI {props.name}!</h2>
+            <h2>Hello {props.name}!</h2>
 
             <p className="bmi-value">Your BMI is: {props.bmiResult}</p>
             <p className="bmi-category">You are in the category: {props.bmiCategory}</p>
